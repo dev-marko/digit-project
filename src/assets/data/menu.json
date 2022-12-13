@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "id": "e693ef7e-7aee-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "The Godfather",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "eac6c832-7aee-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "Crispy Chicken",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "2f5ffc02-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "The Blueprint",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "36cf7300-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "Quatro Formaggi",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "3a404c62-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "Classic Hamburger",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "3cfbfda2-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "Holy Smoke",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "40364d88-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "The Cowboy",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "48d5cbee-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "The Pioneer",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "4c30a3cc-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "Crazy Rooster",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    },
+    {
+      "id": "4f695a48-7aef-11ed-a1eb-0242ac120002",
+      "category": "burgers",
+      "name": "El Diablo",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "lettuce",
+        "burger sauce",
+        "onion",
+        "pickles"
+      ]
+    }
+  ]
+}
