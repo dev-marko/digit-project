@@ -1,23 +1,12 @@
-import { useEffect, useState } from "react";
-import menuObject from "./assets/data/menu.json";
+import { Box } from "@chakra-ui/react";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
-  const [menu, setMenu] = useState([]);
-
-  useEffect(() => {
-    setMenu(menuObject.data);
-    console.log(menu);
-  }, [menu])
-
   return (
-    <div>
-      {
-        menu.map((item) => {
-          return <div>{item.name}</div>
-        })
-      }
-    </div>
+    <Box width={"100vw"}>
+      <Navbar />
+    </Box>
   );
-}
+};
 
 export default App;

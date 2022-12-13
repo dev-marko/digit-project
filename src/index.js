@@ -1,11 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import App from './App';
+import { ChakraProvider } from "@chakra-ui/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "@fontsource/raleway/";
+import "@fontsource/open-sans/700.css";
+
+import App from "./App.js";
+import Fonts from "./utils/fonts.js";
+import theme from "./theme.js";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider theme={theme}>
+      <Fonts />
+      <App />
+    </ChakraProvider>
   </React.StrictMode>
 );
