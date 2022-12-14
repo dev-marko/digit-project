@@ -1,4 +1,4 @@
-import { Flex, Button, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 import PrimaryButton from "./PrimaryButton.jsx";
 
