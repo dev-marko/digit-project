@@ -1,4 +1,4 @@
-import { Container, Flex, HStack, Spacer, VStack } from "@chakra-ui/react";
+import { Container, VStack } from "@chakra-ui/react";
 import HeroSection from "../components/HeroSection.jsx";
 
 import Navbar from "../components/Navbar";
