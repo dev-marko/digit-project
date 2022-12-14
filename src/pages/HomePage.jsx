@@ -8,11 +8,6 @@ const HomePage = () => {
 
   return (
     <>
-      <VStack bg='background.100'>
-        <Container maxW='container.xl'>
-          <Navbar />
-        </Container>
-      </VStack>
       <VStack bg='background.200'>
         <Container maxW='container.xl' p='5'>
           <NewOffer />

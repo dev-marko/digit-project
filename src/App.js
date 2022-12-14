@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { VStack, Container } from "@chakra-ui/layout";
 
 import Navbar from "./components/Navbar.jsx";
 import HomePage from "./pages/HomePage.jsx"
@@ -11,7 +12,12 @@ import MenuPage from "./pages/MenuPage.jsx"
 const App = () => {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
+    <VStack bg='background.100'>
+        <Container maxW='container.xl'>
+          <Navbar />
+        </Container>
+    </VStack>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="about" element={<AboutPage />} />
