@@ -1,8 +1,14 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 import PrimaryButton from "./PrimaryButton.jsx";
 
 const Navbar = () => {
+  let activeStyle = {
+    fontWeight: '700',
+  };
+
+
   return (
     <Flex
       bg='background.100'
@@ -12,15 +18,18 @@ const Navbar = () => {
       my={'8'}
     >
       <Heading>jollybyte</Heading>
-      <Flex flexDirection={"row"} gap={16}>
-        <Text fontSize={"24px"} fontWeight={400}>
-          home
+      <Flex flexDir={"row"} gap={16}>
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ textShadow: '0px 0px 2px #313131' }}>
+          <NavLink to="/" style={({isActive}) => isActive ? activeStyle : null}>home</NavLink>
         </Text>
-        <Text fontSize={"24px"} fontWeight={400}>
-          about us
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ textShadow: '0px 0px 2px #313131' }}>
+          <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null}>about us</NavLink>
         </Text>
-        <Text fontSize={"24px"} fontWeight={400}>
-          order
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ textShadow: '0px 0px 2px #313131' }}>
+          <NavLink to="/app" style={({isActive}) => isActive ? activeStyle : null}>app</NavLink>
+        </Text>
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ textShadow: '0px 0px 2px #313131' }}>
+          <NavLink to="/order" style={({isActive}) => isActive ? activeStyle : null}>order</NavLink>
         </Text>
       </Flex>
       <PrimaryButton size={'24px'} text={"menu"} />

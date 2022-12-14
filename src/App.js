@@ -1,15 +1,25 @@
-import { Box } from "@chakra-ui/react";
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar.jsx";
-import NewOffer from "./components/NewOffer.jsx";
-import HomePage from "./pages/HomePage.jsx";
+import HomePage from "./pages/HomePage.jsx"
+import AboutPage from "./pages/AboutPage.jsx"
+import OrderPage from "./pages/OrderPage.jsx"
+import AppPage from "./pages/AppPage.jsx"
+import MenuPage from "./pages/MenuPage.jsx"
+
 
 const App = () => {
   return (
-    // <Box width={"100vw"}>
-    //   <Navbar />
-    //   <NewOffer/>
-    // </Box>
-    <HomePage/>
+    <>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="about" element={<AboutPage />} />
+      <Route path="order" element={<OrderPage />} />
+      <Route path="app" element={<AppPage />} />
+      <Route path="menu" element={<MenuPage />} />
+    </Routes>
+    </>
   );
 };
 
