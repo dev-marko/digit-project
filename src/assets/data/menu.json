@@ -11,7 +11,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 4.98
     },
     {
       "id": "eac6c832-7aee-11ed-a1eb-0242ac120002",
@@ -24,7 +25,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 4.67
     },
     {
       "id": "2f5ffc02-7aef-11ed-a1eb-0242ac120002",
@@ -37,7 +39,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 4.54
     },
     {
       "id": "36cf7300-7aef-11ed-a1eb-0242ac120002",
@@ -50,7 +53,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 4.21
     },
     {
       "id": "3a404c62-7aef-11ed-a1eb-0242ac120002",
@@ -63,7 +67,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 3.81
     },
     {
       "id": "3cfbfda2-7aef-11ed-a1eb-0242ac120002",
@@ -76,7 +81,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 3.5
     },
     {
       "id": "40364d88-7aef-11ed-a1eb-0242ac120002",
@@ -89,7 +95,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 3.17
     },
     {
       "id": "48d5cbee-7aef-11ed-a1eb-0242ac120002",
@@ -102,7 +109,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 2.98
     },
     {
       "id": "4c30a3cc-7aef-11ed-a1eb-0242ac120002",
@@ -115,7 +123,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 2.87
     },
     {
       "id": "4f695a48-7aef-11ed-a1eb-0242ac120002",
@@ -128,7 +137,8 @@
         "burger sauce",
         "onion",
         "pickles"
-      ]
+      ],
+      "rating": 2.68
     }
   ]
 }

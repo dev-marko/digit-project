@@ -12,7 +12,6 @@ import MenuPage from "./pages/MenuPage.jsx"
 const App = () => {
   return (
     <>
-    {/* <Navbar /> */}
     <VStack bg='background.100'>
         <Container maxW='container.xl'>
           <Navbar />
