@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import "@fontsource/raleway/";
-import "@fontsource/open-sans/700.css";
 
 import App from "./App.js";
 import Fonts from "./utils/fonts.js";

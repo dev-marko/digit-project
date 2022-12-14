@@ -5,15 +5,14 @@ import PrimaryButton from "./PrimaryButton.jsx";
 const Navbar = () => {
   return (
     <Flex
-      bgColor={"#FCF5E1"}
-      flexDir={"row"}
-      justifyContent={"space-between"}
-      alignItems={"center"}
-      px={148}
-      py={6}
+      bg='background.100'
+      flexDirection={'row'}
+      justifyContent={'space-between'}
+      alignItems={'center'}
+      my={'8'}
     >
-      <Heading>jollybytes</Heading>
-      <Flex flexDir={"row"} gap={16}>
+      <Heading>jollybyte</Heading>
+      <Flex flexDirection={"row"} gap={16}>
         <Text fontSize={"24px"} fontWeight={400}>
           home
         </Text>
@@ -24,7 +23,7 @@ const Navbar = () => {
           order
         </Text>
       </Flex>
-      <PrimaryButton text={"menu"} />
+      <PrimaryButton size={'24px'} text={"menu"} />
     </Flex>
   );
 };

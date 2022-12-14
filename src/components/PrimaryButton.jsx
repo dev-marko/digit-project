@@ -10,7 +10,7 @@ const PrimaryButton = (props) => {
       py={2}
       rounded={"full"}
     >
-      <Text fontSize={"24px"} fontWeight={400}>
+      <Text fontSize={props.size} fontWeight={400}>
         {props.text}
       </Text>
     </Button>
