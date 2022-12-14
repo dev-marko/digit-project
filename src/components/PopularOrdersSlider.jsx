@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Box, Image } from '@chakra-ui/react';
 import Slider from "react-slick";
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
@@ -51,15 +50,6 @@ const PopularOrdersSlider = () => {
   return (
     <>
       <Slider {...settings}>
-        <Box>
-          <Image src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
-        </Box>
-        <Box>
-          <Image src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
-        </Box>
-        <Box>
-          <Image src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
-        </Box>
         <Box>
           <Image src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
         </Box>

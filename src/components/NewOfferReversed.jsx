@@ -6,7 +6,7 @@ const NewOfferReversed = () => {
     <Flex mt='5' flexDirection={'row'} bg='background.100' alignItems={"center"} borderRadius='10px'>
       <Box flex='1' ps='10' py='6'>
         <Box p='5'>
-          <Heading>New Wrap!</Heading>
+          <Heading as='h3' size='lg'>New Wrap!</Heading>
           <Text my='5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
