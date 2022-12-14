@@ -17,7 +17,7 @@ const NewOffer = () => {
             enim facilisis. Cursus mattis molestie a iaculis at erat pellentesque. Aenean vel elit
             scelerisque mauris. Velit euismod in pellentesque massa placerat duis.
           </Text>
-          <PrimaryButton text={'More Info'} />
+          <PrimaryButton text={'more info'} />
         </Box>
       </Box>
     </Flex>

@@ -14,7 +14,7 @@ const NewOfferReversed = () => {
             enim facilisis. Cursus mattis molestie a iaculis at erat pellentesque. Aenean vel elit
             scelerisque mauris. Velit euismod in pellentesque massa placerat duis.
           </Text>
-          <PrimaryButton text={'More Info'} />
+          <PrimaryButton text={'more info'} />
         </Box>
       </Box>
       <Box pe='10' py='6' flex='1'>
