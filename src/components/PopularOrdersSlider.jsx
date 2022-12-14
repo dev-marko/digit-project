@@ -41,7 +41,7 @@ function SampleNextArrow(props) {
         display: "block",
       }}
       onClick={onClick}
-      boxSize={'25px'}
+      boxSize={'35px'}
       _hover={{ color: 'black' }} />
   );
 }
@@ -56,7 +56,7 @@ function SamplePrevArrow(props) {
         display: "block",
       }}
       onClick={onClick}
-      boxSize={'25px'}
+      boxSize={'35px'}
       _hover={{ color: 'black' }} />
   );
 }
