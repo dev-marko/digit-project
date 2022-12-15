@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import Slider from "react-slick";
-import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
+import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
 
   return (
-    <ArrowForwardIcon
+    <ChevronRightIcon
       className={className}
       style={{
         ...style,
@@ -25,7 +25,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <ArrowBackIcon
+    <ChevronLeftIcon
       className={className}
       style={{
         ...style,

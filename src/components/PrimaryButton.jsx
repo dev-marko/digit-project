@@ -9,6 +9,7 @@ const PrimaryButton = (props) => {
       px={4}
       py={2}
       rounded={"full"}
+      onClick={() => { props.func(props.text) }}
     >
       <Text fontSize={props.size} fontWeight={400}>
         {props.text}

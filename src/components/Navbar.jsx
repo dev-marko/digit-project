@@ -20,19 +20,19 @@ const Navbar = () => {
       <Heading>jollybyte</Heading>
       <Flex flexDir={"row"} gap={16}>
         <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/" style={({isActive}) => isActive ? activeStyle : null}>home</NavLink>
+          <NavLink to="/" style={({ isActive }) => isActive ? activeStyle : null}>home</NavLink>
         </Text>
         <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null}>about us</NavLink>
+          <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : null}>about us</NavLink>
         </Text>
         <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/app" style={({isActive}) => isActive ? activeStyle : null}>app</NavLink>
+          <NavLink to="/app" style={({ isActive }) => isActive ? activeStyle : null}>app</NavLink>
         </Text>
         <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/order" style={({isActive}) => isActive ? activeStyle : null}>order</NavLink>
+          <NavLink to="/order" style={({ isActive }) => isActive ? activeStyle : null}>order</NavLink>
         </Text>
       </Flex>
-      <PrimaryButton size={'24px'} text={"menu"} />
+      <NavLink to="/menu"><PrimaryButton size={'24px'} text={"menu"} /></NavLink>
     </Flex>
   );
 };

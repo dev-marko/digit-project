@@ -18,7 +18,7 @@ const NewOfferReversed = () => {
         </Box>
       </Box>
       <Box pe='10' py='6' flex='1'>
-        <Image borderRadius='10px'  w='50vh' h='25vh' objectFit='cover' src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
+        <Image borderRadius='10px'  w='50vh' h='25vh' objectFit='cover' src='./images/new_offer_wrap.jpg' alt="placeholder image" style={{ margin: 'auto' }} />
       </Box>
     </Flex>
   );
