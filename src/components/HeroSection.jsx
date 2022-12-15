@@ -5,14 +5,15 @@ import PrimaryButton from "./PrimaryButton.jsx";
 
 const HeroSection = () => {
     return (
-        <Flex h="100%" flexDir={"row"} alignItems={"center"} gap={"36px"}>
+        <Flex textAlign={{base: 'center', md: 'inerhit'}} h="100%" flexDir={{base: 'column', md: 'row'}} alignItems={"center"} gap={"36px"}>
             <Box>
-                <Heading as='h1' size='3xl' noOfLines={1} my={"4px"}>THE GODMOTHER</Heading>
-                <Text fontSize='xl' mb={"24px"}>grilled onion, smoked BBQ sauce, picles, blah blah..</Text>
-                <PrimaryButton size={"20px"} text={"order now"} />
+                <Heading as='h1' size={{base: 'xl', md: '3xl'}}  my={"4px"}>THE GODMOTHER</Heading>
+                <Text fontSize={{base: 'md', md: 'xl'}} mb={"24px"}>grilled onion, smoked BBQ sauce, picles, blah blah..</Text>
+                <PrimaryButton size={{base: 'sm', md: 'lg'}} text={"order now"} />
             </Box>
             <Box>
-                <Image borderRadius='10px' w='65vh' h='65vh' objectFit='cover' src='./images/main-photo.png' alt="placeholder image" />
+                {/* w='65vh' h='65vh' */}
+                <Image borderRadius='10px' w={{base: "xs", md: '65vh'}} h={{base: "xs", md: '65vh'}} objectFit='cover' src='./images/main-photo.png' alt="Hand reaching fries with burger in the background" />
             </Box>
         </Flex>
     );

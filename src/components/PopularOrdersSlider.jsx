@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Box, useMediaQuery } from '@chakra-ui/react';
 import Slider from "react-slick";
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
@@ -38,6 +38,8 @@ function SamplePrevArrow(props) {
 }
 
 const PopularOrdersSlider = (props) => {
+  // const [isTablet] = useMediaQuery('(min-width: 600px)')
+
   var settings = {
     dots: true,
     infinite: true,
@@ -49,7 +51,7 @@ const PopularOrdersSlider = (props) => {
   };
   return (
     <Box>
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         {
           props.orders.map((item) => {
             return (
@@ -57,7 +59,7 @@ const PopularOrdersSlider = (props) => {
             );
           })
         }
-      </Slider>
+      </Slider> */}
     </Box>
   );
 }

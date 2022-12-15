@@ -1,15 +1,12 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text, Image, Box } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
+import { routes } from '../constants/routes'
+import OrderDrawer from "./OrderDrawer.jsx";
 import PrimaryButton from "./PrimaryButton.jsx";
 
 const Navbar = () => {
-  let activeStyle = {
-    fontWeight: '700',
-  };
-
-
-  return (
+return (
     <Flex
       bg='background.100'
       flexDirection={'row'}
@@ -17,19 +14,17 @@ const Navbar = () => {
       alignItems={'center'}
       my={'8'}
     >
-      <Heading>jollybyte</Heading>
+      <Box as={NavLink} to="/">
+        <Image w='200px' src='./images/jollybyte-logo.svg'/>
+      </Box>
       <Flex flexDir={"row"} gap={16}>
-        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/" style={({ isActive }) => isActive ? activeStyle : null}>home</NavLink>
-        </Text>
-        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/about" style={({ isActive }) => isActive ? activeStyle : null}>about us</NavLink>
-        </Text>
-        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/app" style={({ isActive }) => isActive ? activeStyle : null}>app</NavLink>
-        </Text>
-        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-          <NavLink to="/order" style={({ isActive }) => isActive ? activeStyle : null}>order</NavLink>
+        {routes.map((route) => (
+          <Text key={route} fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
+           <NavLink to={route}>{route.slice(1)}</NavLink>
+         </Text>
+        ))}
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700', cursor: "pointer"}} >
+          <OrderDrawer />
         </Text>
       </Flex>
       <NavLink to="/menu"><PrimaryButton size={'24px'} text={"menu"} /></NavLink>

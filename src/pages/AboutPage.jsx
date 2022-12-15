@@ -19,18 +19,18 @@ const AboutPage = () => {
                         id est laborum.
                     </Text>
                     <Flex justify={'center'}>
-                        <Box maxW='xl'>
-                            <Image src='./images/placeholder.jpg' />
+                        <Box size={{base: 'sm', md: 'lg'}}>
+                            <Image src='./images/about_us.jpg' />
                         </Box>
                     </Flex>
                 </Flex>
-                <Flex flexDirection={'row'} mt='8'>
+                <Flex flexDirection={{base: 'column', md: 'row'}} mt='8' justify={'space-between'} gap='4'>
                     <Box>
-                        <Heading>Contact</Heading>
+                        <Heading>CONTACT</Heading>
                         <Stack mt='4' gap='4'>
                             <Box>
-                                <Text>new york, usa</Text>
-                                <Text>02/ 45 56 89 52</Text>
+                                <Text>skopje, mk</Text>
+                                <Text>02/ 2793 037</Text>
                             </Box>
                             <Box>
                                 <Text>london, uk</Text>
@@ -46,8 +46,8 @@ const AboutPage = () => {
                             </Box>
                         </Stack>
                     </Box>
-                    <Box ms='20rem'>
-                        <Heading>Location</Heading>
+                    <Box>
+                        <Heading>LOCATION</Heading>
                         <Box mt='4'>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11859.356690774566!2d21.39479!3d42.003727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd885169619e42643!2sAxeltra!5e0!3m2!1sen!2smk!4v1671122530442!5m2!1sen!2smk" width="640" height="260" style={{ border: 0, }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </Box>
