@@ -12,7 +12,7 @@ const HomePage = () => {
         <HeroSection />
       </VStack>
       <VStack bg="background.200">
-        <Container maxW="container.xl" p="5">
+        <Container maxW="container.xl" p="5" mb={32}>
           <PopularOrders/>
           <NewOffer />
           <NewOfferReversed />

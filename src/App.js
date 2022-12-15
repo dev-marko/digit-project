@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage.jsx"
 import OrderPage from "./pages/OrderPage.jsx"
 import AppPage from "./pages/AppPage.jsx"
 import MenuPage from "./pages/MenuPage.jsx"
+import Footer from "./components/Footer.jsx";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Navbar />
         </Container>
     </VStack>
+
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="about" element={<AboutPage />} />
@@ -24,6 +26,12 @@ const App = () => {
       <Route path="app" element={<AppPage />} />
       <Route path="menu" element={<MenuPage />} />
     </Routes>
+ 
+    <VStack bg='background.100'>
+        <Container maxW='container.xl'>
+          <Footer />
+        </Container>
+    </VStack>
     </>
   );
 };

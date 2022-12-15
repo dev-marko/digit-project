@@ -29,7 +29,7 @@ const PopularOrders = () => {
       {
         loading ?
           <Flex flexDirection={'column'} alignItems={'center'}>
-            <Spinner size='xl' />
+            <Spinner size='xl'/>
           </Flex>
           :
           <PopularOrdersSlider orders={mostPopularOrders} />
