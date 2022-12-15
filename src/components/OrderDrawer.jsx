@@ -15,6 +15,7 @@ import {
   AspectRatio,
   IconButton,
   Icon,
+  Button,
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react-use-disclosure";
@@ -29,6 +30,13 @@ const OrderDrawer = () => {
   const { cartItems, removeFromCart } = useShoppingCart();
 
   const isCartEmpty = cartItems.length === 0;
+
+  const handleOrder = () => {
+    console.log('hello');
+    cartItems.forEach(item => {
+      removeFromCart(item.id);
+    });
+  }
 
   return (
     <>
@@ -55,64 +63,65 @@ const OrderDrawer = () => {
 
           <DrawerBody>
             <VStack spacing={4} mt={3} alignItems="flex-start">
-            {isCartEmpty ? (
-              <Text alignSelf="center">your order is empty</Text> 
-            )
-            : cartItems.map((cartItem) => (
-              <><Text fontSize="xl">added to order</Text><HStack
-                rounded="lg"
-                key={cartItem.id}
-                p={3}
-                bg="background.100"
-                w="full"
-                justify="space-between"
-              >
-                <HStack>
-                  <AspectRatio w="100px" maxW="100px" ratio={1}>
-                    <Image
-                      rounded="lg"
-                      objectFit="cover"
-                      src="./images/new_offer_burger.jpg" />
-                  </AspectRatio>
+              {isCartEmpty ? (
+                <Text alignSelf="center">your order is empty</Text>
+              )
+                :
+                cartItems.map((cartItem) => (
+                  <HStack
+                    rounded="lg"
+                    key={cartItem.id}
+                    p={3}
+                    bg="background.100"
+                    w="full"
+                    justify="space-between"
+                  >
+                    <HStack>
+                      <AspectRatio w="100px" maxW="100px" ratio={1}>
+                        <Image
+                          rounded="lg"
+                          objectFit="cover"
+                          src="./images/new_offer_burger.jpg" />
+                      </AspectRatio>
 
-                  <VStack
-                    textAlign="left"
-                    justifyContent="space-between"
-                    spacing={3}
-                  >
-                    <Box>
-                      <Heading size={{ base: "sm", md: "md" }}>
-                        {cartItem.name}
+                      <VStack
+                        textAlign="left"
+                        justifyContent="space-between"
+                        spacing={3}
+                      >
+                        <Box>
+                          <Heading size={{ base: "sm", md: "md" }}>
+                            {cartItem.name}
+                          </Heading>
+                          <Text>
+                            {cartItem.ingredients.length > 3
+                              ? cartItem.ingredients.slice(0, 3).join(", ") +
+                              "..."
+                              : cartItem.ingredients.join(", ")}
+                          </Text>
+                        </Box>
+                        <Text alignSelf="baseline">
+                          quantity: {cartItem.quantity}
+                        </Text>
+                      </VStack>
+                    </HStack>
+                    <VStack justifyContent="space-between" alignItems="center">
+                      <Heading
+                        alignSelf="flex-start"
+                        size={{ base: "sm", md: "md" }}
+                      >
+                        ${cartItem.rating}
                       </Heading>
-                      <Text>
-                        {cartItem.ingredients.length > 3
-                          ? cartItem.ingredients.slice(0, 3).join(", ") +
-                          "..."
-                          : cartItem.ingredients.join(", ")}
-                      </Text>
-                    </Box>
-                    <Text alignSelf="baseline">
-                      quantity: {cartItem.quantity}
-                    </Text>
-                  </VStack>
-                </HStack>
-                <VStack justifyContent="space-between" alignItems="center">
-                  <Heading
-                    alignSelf="flex-start"
-                    size={{ base: "sm", md: "md" }}
-                  >
-                    ${cartItem.rating}
-                  </Heading>
-                  <IconButton
-                    onClick={() => removeFromCart(cartItem.id)}
-                    w={10}
-                    h={10}
-                    color="#171717"
-                    bg="background.200"
-                    icon={<Icon as={DeleteIcon} />} />
-                </VStack>
-              </HStack></>
-              ))}
+                      <IconButton
+                        onClick={() => removeFromCart(cartItem.id)}
+                        w={10}
+                        h={10}
+                        color="#171717"
+                        bg="background.200"
+                        icon={<Icon as={DeleteIcon} />} />
+                    </VStack>
+                  </HStack>
+                ))}
             </VStack>
           </DrawerBody>
           <DrawerFooter borderTop={"1px solid black"}>
@@ -137,7 +146,19 @@ const OrderDrawer = () => {
                     .toFixed(2)}
                 </Heading>
               </Flex>
-              <PrimaryButton text={"purchase"} />
+              <Button
+                colorScheme={"#171717"}
+                variant={"outline"}
+                _hover={{ bg: "#313131", color: "#fffcf2" }}
+                px={4}
+                py={2}
+                rounded={"full"}
+                onClick={handleOrder}
+              >
+                <Text fontWeight={400}>
+                  purchase
+                </Text>
+              </Button>
             </Flex>
           </DrawerFooter>
         </DrawerContent>

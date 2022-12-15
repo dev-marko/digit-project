@@ -37,7 +37,7 @@ const MenuPage = () => {
                     </Flex>
                     :
                     <VStack bg="background.200">
-                        <Container maxW="container.xl" p="5" mt='8'>
+                        <Container maxW="container.xl" p="5" my='8'>
                             <Flex flexDirection={'column'} gap='8'>
                                 <Box>
                                     <Heading>

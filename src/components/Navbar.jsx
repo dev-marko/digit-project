@@ -6,7 +6,12 @@ import OrderDrawer from "./OrderDrawer.jsx";
 import PrimaryButton from "./PrimaryButton.jsx";
 
 const Navbar = () => {
-return (
+
+  let activeStyle = {
+    fontWeight: '700',
+  };
+
+  return (
     <Flex
       bg='background.100'
       flexDirection={'row'}
@@ -15,15 +20,15 @@ return (
       my={'8'}
     >
       <Box as={NavLink} to="/">
-        <Image w='200px' src='./images/jollybyte-logo.svg'/>
+        <Image w='200px' src='./images/jollybyte-logo.svg' />
       </Box>
       <Flex flexDir={"row"} gap={16}>
         {routes.map((route) => (
           <Text key={route} fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700' }}>
-           <NavLink to={route}>{route.slice(1)}</NavLink>
-         </Text>
+            <NavLink to={route} style={({ isActive }) => isActive ? activeStyle : null}>{route.slice(1)}</NavLink>
+          </Text>
         ))}
-        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700', cursor: "pointer"}} >
+        <Text fontSize={"24px"} fontWeight={400} _hover={{ fontWeight: '700', cursor: "pointer" }} >
           <OrderDrawer />
         </Text>
       </Flex>

@@ -20,7 +20,7 @@ const AboutPage = () => {
                     </Text>
                     <Flex justify={'center'}>
                         <Box size={{base: 'sm', md: 'lg'}}>
-                            <Image src='./images/about_us.jpg' />
+                            <Image src='./images/about_us.jpg' borderRadius={'10px'}/>
                         </Box>
                     </Flex>
                 </Flex>
