@@ -12,7 +12,6 @@ const HeroSection = () => {
                 <PrimaryButton size={{base: 'sm', md: 'lg'}} noBorder={'none'} color={'#171717'} bg={'#ccf736'} text={"order now"} />
             </Box>
             <Box>
-                {/* w='65vh' h='65vh' */}
                 <Image borderRadius='10px' w={{base: "xs", md: '65vh'}} h={{base: "xs", md: '65vh'}} objectFit='cover' src='./images/main-photo.png' alt="Hand reaching fries with burger in the background" />
             </Box>
         </Flex>

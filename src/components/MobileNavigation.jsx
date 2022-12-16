@@ -1,10 +1,8 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
+  Stack,
   IconButton,
   Button,
   Menu,
@@ -13,11 +11,7 @@ import {
   MenuItem,
   MenuDivider,
   useDisclosure,
-  useColorModeValue,
-  Stack,
   Heading,
-  Fade,
-  Text,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -87,13 +81,8 @@ const MobileNavigation = () => {
                   {route.slice(1)}
                 </NavLink>
               ))}
-              {/* <Text
-                fontSize={"24px"}
-                fontWeight={400}
-                _hover={{ fontWeight: "700", cursor: "pointer" }}
-              > */}
                 <OrderDrawer />
-              {/* </Text> */}
+                <NavLink to="/menu">menu</NavLink>
             </Stack>
           </Box>
         )}
