@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   Drawer,
   DrawerOverlay,
@@ -16,12 +14,15 @@ import {
   IconButton,
   Icon,
   Button,
+  Alert,
+  AlertIcon
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react-use-disclosure";
 import { Heading, Text, Flex } from "@chakra-ui/layout";
-import PrimaryButton from "./PrimaryButton";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import React, { useState } from "react";
+
 import menuItems from "../assets/data/menu.json";
 
 const OrderDrawer = () => {
@@ -29,13 +30,20 @@ const OrderDrawer = () => {
   const orderRef = React.useRef();
   const { cartItems, removeFromCart } = useShoppingCart();
 
+  const [successfulOrder, setSuccessfulOrder] = useState(false);
+
   const isCartEmpty = cartItems.length === 0;
 
   const handleOrder = () => {
-    console.log('hello');
     cartItems.forEach(item => {
       removeFromCart(item.id);
     });
+
+    setSuccessfulOrder(true);
+  }
+
+  const clearAlert = () => {
+    setSuccessfulOrder(false);
   }
 
   return (
@@ -54,7 +62,7 @@ const OrderDrawer = () => {
         <DrawerContent>
           <DrawerHeader bg="background.100">
             <Flex h="75px" alignItems={"center"}>
-              <DrawerCloseButton />
+              <DrawerCloseButton onClick={clearAlert}/>
               <Text fontSize={"24px"} fontWeight={400}>
                 order
               </Text>
@@ -159,6 +167,16 @@ const OrderDrawer = () => {
                   purchase
                 </Text>
               </Button>
+              {
+                successfulOrder ?
+                  (
+                    <Alert status='success' variant='subtle' mt='2'>
+                      <AlertIcon />
+                      Success! Processing order...
+                    </Alert>
+                  )
+                  : null
+              }
             </Flex>
           </DrawerFooter>
         </DrawerContent>

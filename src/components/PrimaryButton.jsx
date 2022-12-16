@@ -5,7 +5,7 @@ const PrimaryButton = (props) => {
     <Button
       colorScheme={"#171717"}
       variant={"outline"}
-      _hover={{ bg: "#313131", color: "#fffcf2" }}
+      _hover={{ bg: props.bg, color: props.color, border: props.noBorder }}
       px={4}
       py={2}
       rounded={"full"}
@@ -17,5 +17,11 @@ const PrimaryButton = (props) => {
     </Button>
   );
 };
+
+
+PrimaryButton.defaultProps = {
+  bg: "#313131",
+  color: "#fffcf2"
+}
 
 export default PrimaryButton;

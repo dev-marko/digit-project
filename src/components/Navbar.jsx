@@ -32,7 +32,9 @@ const Navbar = () => {
           <OrderDrawer />
         </Text>
       </Flex>
-      <NavLink to="/menu"><PrimaryButton size={'24px'} text={"menu"} /></NavLink>
+      <NavLink to="/menu">
+        <PrimaryButton noBorder={'none'} color={'#fffcf2'} bg={'#f85b47'} size={'24px'} text={"menu"} />
+      </NavLink>
     </Flex>
   );
 };

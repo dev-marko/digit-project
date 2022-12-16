@@ -9,7 +9,7 @@ import "@fontsource/raleway/";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext.jsx";
 import App from "./App.js";
 import Fonts from "./utils/fonts.js";
-import theme from "./theme.js";
+import theme from "./utils/theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

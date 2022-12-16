@@ -32,8 +32,10 @@ const MenuPage = () => {
         <>
             {
                 loading ?
-                    <Flex flexDirection={'column'} alignItems={'center'}>
-                        <Spinner size='xl' />
+                    <Flex flexDirection={'column'} justify={'center'} alignItems={'center'}>
+                        <Flex h='100vh' justify={'center'} alignItems={'center'}>
+                            <Spinner size='xl' />
+                        </Flex>
                     </Flex>
                     :
                     <VStack bg="background.200">
@@ -44,7 +46,7 @@ const MenuPage = () => {
                                         BROWSE OUR KITCHEN!
                                     </Heading>
                                 </Box>
-                                <Flex gap='12'>
+                                <Flex flexDirection={{ base: 'column', md: 'row' }} gap='12'>
                                     <Flex flexDir={'column'} gap='4'>
                                         {
                                             categories.map((item) => {
@@ -56,7 +58,7 @@ const MenuPage = () => {
                                             })
                                         }
                                     </Flex>
-                                    <SimpleGrid columns={3} spacing={10}>
+                                    <SimpleGrid columns={{ base: '1', md: '3' }} spacing={10}>
                                         {
                                             filteredMenu.map((item) => {
                                                 return (

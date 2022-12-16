@@ -13,6 +13,7 @@ import {
   HStack,
   Fade,
   Button,
+  VStack,
 } from "@chakra-ui/react";
 import PrimaryButton from "./PrimaryButton";
 
@@ -27,7 +28,7 @@ const MenuItemCard = (props) => {
         <CardBody>
           <Stack mt="6" spacing="4">
             <Image
-              src="./images/placeholder.jpg"
+              src={props.obj.imgUrl}
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
@@ -40,13 +41,20 @@ const MenuItemCard = (props) => {
                 <Heading size="md">${props.obj.rating}</Heading>
               </Box>
             </Flex>
-            <Text>beef, cheese, tomato, lettuce...</Text>
+            <Text>
+              {props.obj.ingredients.length > 3
+                ? props.obj.ingredients.slice(0, 3).join(", ") +
+                "..."
+                : props.obj.ingredients.join(", ")}
+            </Text>
           </Stack>
         </CardBody>
-        <CardFooter>
-          <Box ms="3">
-            <HStack spacing={"28px"}>
-              <PrimaryButton text={"buy now"} size={"18px"} />
+        <CardFooter justify={'center'} alignItems={'center'}>
+          <HStack gap='3' justify={'space-between'}>
+            <Box>
+              <PrimaryButton noBorder={'none'} color={'#171717'} bg={'#ccf736'} text={"buy now"} size={"18px"} />
+            </Box>
+            <Box>
               <Button
                 colorScheme={"#171717"}
                 variant={"outline"}
@@ -57,12 +65,12 @@ const MenuItemCard = (props) => {
                 onClick={() => increaseCartQuantity(props.obj)}
                 size={"18px"}
               >
-                <Text fontSize={props.size} fontWeight={400}>
-                  add to cart
+                <Text fontSize={'18px'} fontWeight={400}>
+                  add to order
                 </Text>
               </Button>
-            </HStack>
-          </Box>
+            </Box>
+          </HStack>
         </CardFooter>
       </Card>
     </Fade>

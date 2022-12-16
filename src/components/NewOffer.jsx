@@ -1,12 +1,12 @@
-import { Flex, Box, Text, Image, Heading } from "@chakra-ui/react";
+import { Flex, Box, Text, Image, Heading, HStack } from "@chakra-ui/react";
 import PrimaryButton from "./PrimaryButton";
 
 const NewOffer = () => {
   return (
-    <Flex mb='8' flexDirection={'row'} bg='background.100' alignItems={"center"} borderRadius='10px'>
-      <Box ps='10' py='6' flex='1' alignItems={'center'}>
-        <Image borderRadius='10px' w='50vh' h='25vh' objectFit='cover' src='./images/new_offer_burger.jpg' alt="placeholder image" style={{ margin: 'auto' }}/>
-      </Box>
+    <Flex mb='8' flexDirection={{base: 'column', md: 'row'}} bgGradient='linear(background.100, background.200)' alignItems={"center"} borderRadius='10px'>
+      <HStack p='8' alignItems={'center'} justify={'center'}>
+        <Image borderRadius='10px' w='50vh' h='25vh' objectFit='cover' src='./images/new_offer_burger.jpg' alt="placeholder image"/>
+      </HStack>
       <Box flex='1' pe='10' py='6'>
         <Box p='5'>
           <Heading as='h3' size='lg'>NEW CHEESEBURGER!</Heading>

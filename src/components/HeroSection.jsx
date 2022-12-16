@@ -9,7 +9,7 @@ const HeroSection = () => {
             <Box>
                 <Heading as='h1' size={{base: 'xl', md: '3xl'}}  my={"4px"}>THE GODMOTHER</Heading>
                 <Text fontSize={{base: 'md', md: 'xl'}} mb={"24px"}>grilled onion, smoked BBQ sauce, picles, blah blah..</Text>
-                <PrimaryButton size={{base: 'sm', md: 'lg'}} text={"order now"} />
+                <PrimaryButton size={{base: 'sm', md: 'lg'}} noBorder={'none'} color={'#171717'} bg={'#ccf736'} text={"order now"} />
             </Box>
             <Box>
                 {/* w='65vh' h='65vh' */}
