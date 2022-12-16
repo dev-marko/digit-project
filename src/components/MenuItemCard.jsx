@@ -1,7 +1,6 @@
 import {
   Card,
   CardBody,
-  Divider,
   Image,
   Stack,
   Heading,
@@ -13,14 +12,13 @@ import {
   HStack,
   Fade,
   Button,
-  VStack,
 } from "@chakra-ui/react";
 import PrimaryButton from "./PrimaryButton";
 
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const MenuItemCard = (props) => {
-  const { increaseCartQuantity, cartItems } = useShoppingCart();
+  const { increaseCartQuantity } = useShoppingCart();
 
   return (
     <Fade in={true}>

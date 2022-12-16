@@ -8,7 +8,7 @@ const HeroSection = () => {
         <Flex textAlign={{base: 'center', md: 'inerhit'}} h="100%" flexDir={{base: 'column', md: 'row'}} alignItems={"center"} gap={"36px"}>
             <Box>
                 <Heading as='h1' size={{base: 'xl', md: '3xl'}}  my={"4px"}>THE GODMOTHER</Heading>
-                <Text fontSize={{base: 'md', md: 'xl'}} mb={"24px"}>grilled onion, smoked BBQ sauce, picles, blah blah..</Text>
+                <Text fontSize={{base: 'md', md: 'xl'}} mb={"24px"}>beef, bacon, cheddar cheese, diced onions and garlic sauce</Text>
                 <PrimaryButton size={{base: 'sm', md: 'lg'}} noBorder={'none'} color={'#171717'} bg={'#ccf736'} text={"order now"} />
             </Box>
             <Box>
