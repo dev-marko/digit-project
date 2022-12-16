@@ -6,41 +6,43 @@
       "name": "The Godfather",
       "ingredients": [
         "beef",
-        "tomato",
+        "gouda",
         "lettuce",
         "burger sauce",
-        "onion",
-        "pickles"
+        "caramelized onion",
+        "tomato"
       ],
-      "rating": 4.98
+      "rating": 4.98,
+      "imgUrl": "./images/burgers/burger_1.jpg"
     },
     {
       "id": "eac6c832-7aee-11ed-a1eb-0242ac120002",
       "category": "burgers",
-      "name": "Crispy Chicken",
+      "name": "The Special",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
+        "ham",
+        "cheese sauce",
         "burger sauce",
-        "onion",
-        "pickles"
+        "caramelized onion"
       ],
-      "rating": 4.67
+      "rating": 4.67,
+      "imgUrl": "./images/burgers/burger_2.jpg"
     },
     {
-      "id": "2f5ffc02-7aef-11ed-a1eb-0242ac120002",
+      "id": "3a404c62-7aef-11ed-a1eb-0242ac120002",
       "category": "burgers",
-      "name": "The Blueprint",
+      "name": "The Baconator",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
+        "bacon",
+        "cheese",
+        "hot sauce",
         "onion",
-        "pickles"
+        "tomato"
       ],
-      "rating": 4.54
+      "rating": 3.81,
+      "imgUrl": "./images/burgers/burger_3.jpg"
     },
     {
       "id": "36cf7300-7aef-11ed-a1eb-0242ac120002",
@@ -48,27 +50,28 @@
       "name": "Quatro Formaggi",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "gouda",
+        "blue cheese",
+        "mozzarella",
+        "parmesan",
+        "caramelized onion"
       ],
-      "rating": 4.21
+      "rating": 4.21,
+      "imgUrl": "./images/burgers/burger_4.jpg"
     },
     {
-      "id": "3a404c62-7aef-11ed-a1eb-0242ac120002",
+      "id": "2f5ffc02-7aef-11ed-a1eb-0242ac120002",
       "category": "burgers",
-      "name": "Classic Hamburger",
+      "name": "Chicken Rooster",
       "ingredients": [
-        "beef",
+        "chicken",
         "tomato",
         "lettuce",
-        "burger sauce",
-        "onion",
+        "garlic sauce",
         "pickles"
       ],
-      "rating": 3.81
+      "rating": 4.54,
+      "imgUrl": "./images/burgers/burger_5.jpg"
     },
     {
       "id": "3cfbfda2-7aef-11ed-a1eb-0242ac120002",
@@ -77,82 +80,28 @@
       "ingredients": [
         "beef",
         "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
+        "cheese",
+        "hot sauce",
+        "caramelized onion",
         "pickles"
       ],
-      "rating": 3.5
-    },
-    {
-      "id": "40364d88-7aef-11ed-a1eb-0242ac120002",
-      "category": "burgers",
-      "name": "The Cowboy",
-      "ingredients": [
-        "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
-      ],
-      "rating": 3.17
-    },
-    {
-      "id": "48d5cbee-7aef-11ed-a1eb-0242ac120002",
-      "category": "burgers",
-      "name": "The Pioneer",
-      "ingredients": [
-        "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
-      ],
-      "rating": 2.98
-    },
-    {
-      "id": "4c30a3cc-7aef-11ed-a1eb-0242ac120002",
-      "category": "burgers",
-      "name": "Crazy Rooster",
-      "ingredients": [
-        "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
-      ],
-      "rating": 2.87
-    },
-    {
-      "id": "4f695a48-7aef-11ed-a1eb-0242ac120002",
-      "category": "burgers",
-      "name": "El Diablo",
-      "ingredients": [
-        "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
-      ],
-      "rating": 2.68
+      "rating": 3.5,
+      "imgUrl": "./images/burgers/burger_6.jpg"
     },
     {
       "id": "744f8742-7c7a-11ed-a1eb-0242ac120002",
       "category": "wraps",
-      "name": "Mexican",
+      "name": "Chipotle Mission",
       "ingredients": [
         "beef",
+        "rice",
         "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
+        "cheese",
+        "hot sauce",
         "pickles"
       ],
-      "rating": 2.41
+      "rating": 2.41,
+      "imgUrl": "./images/wraps/wrap_1.jpg"
     },
     {
       "id": "7fbb0872-7c7a-11ed-a1eb-0242ac120002",
@@ -160,13 +109,13 @@
       "name": "TexMex",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "rice",
+        "avocado",
+        "corn",
+        "onion"
       ],
-      "rating": 1.91
+      "rating": 1.91,
+      "imgUrl": "./images/wraps/wrap_2.jpg"
     },
     {
       "id": "83102156-7c7a-11ed-a1eb-0242ac120002",
@@ -174,153 +123,93 @@
       "name": "Caribbean",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "beans",
+        "rice",
+        "cheese sauce",
+        "corn"
       ],
-      "rating": 3.05
+      "rating": 3.05,
+      "imgUrl": "./images/wraps/wrap_3.jpg"
     },
     {
       "id": "8889ed2e-7c7a-11ed-a1eb-0242ac120002",
       "category": "wraps",
-      "name": "Turkish",
+      "name": "Classic Chicken",
       "ingredients": [
-        "beef",
+        "chicken",
+        "rice",
         "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "burger sauce"
       ],
-      "rating": 4.25
+      "rating": 4.25,
+      "imgUrl": "./images/wraps/wrap_4.jpg"
     },
     {
       "id": "8bb9d8c4-7c7a-11ed-a1eb-0242ac120002",
       "category": "wraps",
-      "name": "Indian",
+      "name": "Beefy Hills",
       "ingredients": [
         "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "rice",
+        "avocado",
+        "corn"
       ],
-      "rating": 2.96
+      "rating": 2.96,
+      "imgUrl": "./images/wraps/wrap_5.jpg"
     },
     {
       "id": "8e820d9c-7c7a-11ed-a1eb-0242ac120002",
       "category": "wraps",
-      "name": "Shicken Strips",
+      "name": "Porky Spine",
       "ingredients": [
-        "beef",
+        "pork",
+        "rice",
         "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
+        "cheese sauce"
       ],
-      "rating": 4.40
-    },
-    {
-      "id": "91805c88-7c7a-11ed-a1eb-0242ac120002",
-      "category": "wraps",
-      "name": "American Nuggets",
-      "ingredients": [
-        "beef",
-        "tomato",
-        "lettuce",
-        "burger sauce",
-        "onion",
-        "pickles"
-      ],
-      "rating": 4.08
+      "rating": 4.40,
+      "imgUrl": "./images/wraps/wrap_6.jpg"
     },
     {
       "id": "3d02118c-7c7b-11ed-a1eb-0242ac120002",
       "category": "sandwiches",
-      "name": "Ham & Swiss",
+      "name": "Nugget Sandwich",
       "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
+        "chicken nugget",
+        "tomato",
+        "cheese",
+        "red onion"
       ],
-      "rating": 4.16
+      "rating": 4.16,
+      "imgUrl": "./images/sandwiches/s_1.jpg"
     },
     {
       "id": "49e4fdc4-7c7b-11ed-a1eb-0242ac120002",
       "category": "sandwiches",
       "name": "Combination",
       "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
+        "chicken",
+        "bell pepper",
+        "caramelized onion",
+        "tomato",
+        "pickles"
       ],
-      "rating": 1.51
+      "rating": 1.51,
+      "imgUrl": "./images/sandwiches/s_2.jpg"
     },
     {
       "id": "4cb789ae-7c7b-11ed-a1eb-0242ac120002",
       "category": "sandwiches",
       "name": "Chicken & Cheese",
       "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
+        "chicken nugget",
+        "cheese",
+        "arugula",
+        "tomato",
+        "garlic sauce"
       ],
-      "rating": 3.46
-    },
-    {
-      "id": "4f752dae-7c7b-11ed-a1eb-0242ac120002",
-      "category": "sandwiches",
-      "name": "Tuna & Salad",
-      "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
-      ],
-      "rating": 4.99
-    },
-    {
-      "id": "52307062-7c7b-11ed-a1eb-0242ac120002",
-      "category": "sandwiches",
-      "name": "Pepper & Eggs",
-      "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
-      ],
-      "rating": 1.78
-    },
-    {
-      "id": "54b4efde-7c7b-11ed-a1eb-0242ac120002",
-      "category": "sandwiches",
-      "name": "BBQ & Cheese",
-      "ingredients": [
-        "lorem",
-        "ipsum",
-        "sit",
-        "dolor",
-        "amet",
-        "labore"
-      ],
-      "rating": 1.82
+      "rating": 3.46,
+      "imgUrl": "./images/sandwiches/s_3.jpg"
     }
   ]
 }
